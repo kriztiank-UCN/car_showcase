@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link'
+import Image from 'next/image'
 
-import CustomButton from "./CustomButton";
+import CustomButton from './CustomButton'
 
 const NavBar = () => (
   <header className='w-full absolute z-10'>
@@ -16,6 +16,18 @@ const NavBar = () => (
         />
       </Link>
 
+      {/* <ul className='flex space-x-6 mr-6 text-lg'>
+        <li>
+          <a href='register.html' className='text-white'>
+            Register
+          </a>
+        </li>
+        <li>
+          <a href='login.html' className='text-white'>
+            Login
+          </a>
+        </li>
+      </ul> */}
       <CustomButton
         title='Sign in'
         btnType='button'
@@ -23,6 +35,6 @@ const NavBar = () => (
       />
     </nav>
   </header>
-);
+)
 
-export default NavBar;
+export default NavBar
